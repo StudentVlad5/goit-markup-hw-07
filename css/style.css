@@ -1,6 +1,6 @@
 /*  COLOR STYLES */
 :root {
-    --page-color: #FFFFFF;
+    --primiry-color: #FFFFFF;
     --activity-color: #2196F3;
     --main-text-color:#212121;
     --secondary-text-color: #757575;
@@ -12,7 +12,7 @@
 body {
     font-family: Roboto, sans-serif, Arial, sans-serif;
     color: var(--main-text-color);
-    background-color: var(--page-color);
+    background-color: var(--primiry-color);
 }
 a {
     text-decoration: none;
@@ -24,7 +24,7 @@ h1 {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--page-color);
+    color: var(--primiry-color);
 }
 footer {
     background-color: var(--footer-background-color);
@@ -136,7 +136,7 @@ input[type="checkbox"] {
 .backdrop__btn--close {
     width: 30px;
     height: 30px;
-    background-color: var(--page-color);
+    background-color: var(--primiry-color);
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -338,7 +338,7 @@ input[type="checkbox"] {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--page-color);
+    color: var(--primiry-color);
     background-color: var(--activity-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -394,11 +394,11 @@ input[type="checkbox"] {
     text-align: center;
     letter-spacing: 0.03em;
 }
-/* END ADVANTAGES STYLE */
-/* START DOING STYLE */
 .adventages.section--position {
     padding-bottom: 0;
 }
+/* END ADVANTAGES STYLE */
+/* START DOING STYLE */
 .doing__list .item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
@@ -585,7 +585,7 @@ input[type="checkbox"] {
 .icon-iconsend {
     width: 24px;
     height: 24px;
-    fill: var(--page-color);
+    fill: var(--primiry-color);
 }
 .icon-checkmark {
     width: 11px;
@@ -606,14 +606,14 @@ footer {
     margin: 0 0 20px;
 }
 .post-address {
-    color: var(--page-color);
+    color: var(--primiry-color);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 .logo--color-primary {
-    color: var(--page-color);
+    color: var(--primiry-color);
 }
 .contact.contact-item {
     display: block;
@@ -676,7 +676,7 @@ margin-bottom: 9px;
     letter-spacing: 0.03em;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    color: var(--page-color);
+    color: var(--primiry-color);
     background-color: var(--footer-background-color);
 }
 .email-for-news::placeholder {
@@ -786,7 +786,7 @@ p.poster__project--name {
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-    color:var(--page-color);
+    color:var(--primiry-color);
     z-index: 9999;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -819,9 +819,10 @@ p.poster__project--name {
 }
 .filter-button:hover,
 .filter-button:focus {
-    color: var(--page-color);
+    color: var(--primiry-color);
     background-color: var(--activity-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 .clients__link:hover .icon,
 .clients__link:focus .icon {
@@ -833,7 +834,7 @@ p.poster__project--name {
     }
 .social__link:hover .icon,
 .social__link:focus .icon {
-    fill: var(--page-color);
+    fill: var(--primiry-color);
 }
 .social__link:hover .social__icon,
 .social__link:focus .social__icon{
