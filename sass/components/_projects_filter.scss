@@ -1,6 +1,3 @@
-@import './icons';
-@import '../utils/variables';
-
 .filter__title--do-not-show {
     display: none;
 }
@@ -113,9 +110,11 @@ p.poster__project--name {
     background: $poster-background-color;
     @extend %transform; 
 }
-.poster__link:hover .poster__card--img::after,
-.poster__link:focus .poster__card--img::after,
-.poster__link:hover .poster__card--contant-text,
-.poster__link:focus .poster__card--contant-text {
-    transform: translateY(-100%);
+.poster__link {
+    &:hover .poster__card--img::after,
+    &:focus .poster__card--img::after,
+    &:hover .poster__card--contant-text,
+    &:focus .poster__card--contant-text {
+        transform: translateY(-100%);
+        }
 }

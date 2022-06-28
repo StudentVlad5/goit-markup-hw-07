@@ -1,5 +1,3 @@
-@import './icons';
-@import '../utils/variables';
 .page-header,
 .footer-container {
     margin: 0 auto;
@@ -62,7 +60,8 @@
 .page-header {
     border-bottom: 1px solid $header-border-color;
 }
-.menu-nav__link.menu-nav__link--location::after {
+.menu-nav__link.menu-nav__link--location {
+    &::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -74,21 +73,22 @@
     border-radius: 2px;
     transform: scaleX(0);
     @extend %transform;
-    &:hover, &:focus {
-        transform: scaleX(1);
+        &:hover, &:focus {
+            transform: scaleX(1);
+        }
     }
 }
-.menu-nav__item {
-    & > .menu-nav__link.active::after {
+.menu-nav__item > .menu-nav__link {
+    &.active::after {
         transform: scaleX(1);
     }
-    & > .menu-nav__link.active {
+    &.active {
         color: $activity-color;
     }
-    & > .menu-nav__link:hover .icon-envelope,
-    & > .menu-nav__link:focus .icon-envelope,
-    & > .menu-nav__link:hover .icon-smartphone,
-    & > .menu-nav__link:focus .icon-smartphone {
+    &:hover .icon-envelope,
+    &:focus .icon-envelope,
+    &:hover .icon-smartphone,
+    &:focus .icon-smartphone {
         fill: $activity-color;
     }
 }

@@ -1,13 +1,9 @@
-@import './icons';
-@import '../utils/variables';
-
 .doing__list .item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
 .doing__link {
     position: relative;
-}
-.doing__link::after {
+    &::after {
     display: flex;
     position: absolute;
     width: 100%;
@@ -22,13 +18,14 @@
     text-transform: uppercase;
     color: $primiry-color;
     background-color: rgba(47, 48, 58, 0.8);
-}
-.doing__link.desktop-add::after {
+    }
+    &.desktop-add::after {
     content: "Десктопные приложения";
-}
-.doing__link.mobile-add::after {
+    }
+    &.mobile-add::after {
     content: "Мобильные приложения";
-}
-.doing__link.disigne-add::after {
+    }
+    &.disigne-add::after {
     content: "Дизайнерские решения";
+    }
 }
